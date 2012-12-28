@@ -1,29 +1,29 @@
 <program> 		::= HAI <nlc> <code_block> <nlc> KTHXBAI
-<code_block>	::= <statement> | <statement> <nlc> <code_block>
+<code_block>		::= <statement> | <statement> <nlc> <code_block>
 <statement>		::= <loop> | <declaration> | <comment> | <print_block> |
-		    		<if_block> | <input_block> | <func_decl> |
-                    <assignment> | <expression>
+		    	    <if_block> | <input_block> | <func_decl> |
+                    	    <assignment> | <expression>
 <loop>			::= IM IN YR <label> WILE <expression> <nlc> <code_block>
-   		    		<nlc> IM OUTTA YR <label>
-<declaration>	::= I HAS A <label> | I HAS A <label> ITZ <value>
+   		    	    <nlc> IM OUTTA YR <label>
+<declaration>		::= I HAS A <label> | I HAS A <label> ITZ <value>
 <comment>		::= BTW <string> | OBTW <string> TLDR
-<print_block>	::= VISIBLE <expression> <expression> … <expression> MKAY?
+<print_block>		::= VISIBLE <expression> <expression> … <expression> MKAY?
 <if_block>		::= O RLY? <nlc> YA RLY <nlc> <code_block> <nlc> OIC |
-		    		O RLY? <nlc> YA RLY <nlc> <code_block> <nlc>
-		    		<else_if_block> <nlc> OIC
-<else_if_block>	::= MEBBE <expression> <nlc> <code_block> <nlc>
-		    		<else_if_block> | NO WAI <nlc> <code_block> |
-		    		MEBBE <expression> <nlc> <code_block>
-<input_block>	::= GIMMEH <label>
+		    	    O RLY? <nlc> YA RLY <nlc> <code_block> <nlc>
+		       	    <else_if_block> <nlc> OIC
+<else_if_block>		::= MEBBE <expression> <nlc> <code_block> <nlc>
+		    	    <else_if_block> | NO WAI <nlc> <code_block> |
+		            MEBBE <expression> <nlc> <code_block>
+<input_block>		::= GIMMEH <label>
 <func_decl>		::= HOW DUZ I <label> [[YR <label>] AN YR <label>…] <nlc>
-		    		<code_block> <nlc> IF U SAY SO
-<assignment>	::= <label> R <expression>
-<expression>	::= <equals> | <both> | <not_equals> | <greater> | <less> |
-		    		<add> | <sub> | <mul> | <div> | <mod> | <cast> |
-		    		<either> | <all> | <any> | <not> | <func> | <label>
-		    		| <atom>
+		    	    <code_block> <nlc> IF U SAY SO
+<assignment>		::= <label> R <expression>
+<expression>		::= <equals> | <both> | <not_equals> | <greater> | <less> |
+		    	    <add> | <sub> | <mul> | <div> | <mod> | <cast> |
+		    	    <either> | <all> | <any> | <not> | <func> | <label> | 
+		    	    <atom>
 <equals>		::= BOTH SAEM <expression> AN <expression>
-<not_equals>	::= DIFFRINT <expression> AN <expression>
+<not_equals>		::= DIFFRINT <expression> AN <expression>
 <both>			::= BOTH OF <expression> AN <expression>
 <either>		::= EITHER OF <expression> AN <expression>
 <greater>		::= BIGGR OF <expression> AN <expression>
