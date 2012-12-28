@@ -1,0 +1,43 @@
+HAI,		BTW Fibonacci Numbers
+
+HOW DUZ I FIB YR MAX
+    I HAS A NUM ITZ 1
+    I HAS A NEXT ITZ 1
+    I HAS A COUNT ITZ 0	
+
+    DIFFRINT COUNT AN BIGGR OF COUNT AN MAX,	BTW if COUNT < MAX
+    O RLY?
+        YA RLY 
+            VISIBLE NEXT MKAY?
+            COUNT R SUM OF COUNT AN 1,		BTW COUNT++
+    OIC
+
+    DIFFRINT COUNT AN BIGGR OF COUNT AN MAX,	BTW if COUNT < MAX
+    O RLY?
+        YA RLY
+            VISIBLE NEXT MKAY?
+            COUNT R SUM OF COUNT AN 1,		BTW COUNT++
+            NEXT R SUM OF NEXT AN NUM,		BTW NEXT = NEXT + NUM
+    OIC
+
+    BTW for(; COUNT < MAX; COUNT++)
+    IM IN YR loop WILE DIFFRINT COUNT AN BIGGR OF COUNT AN MAX
+        VISIBLE NEXT MKAY?
+        SUM OF NEXT AN NUM,		BTW IT = NEXT + NUM
+        NUM R NEXT,			BTW NUM = NEXT
+        NEXT R IT,			BTW NEXT = IT
+        COUNT R SUM OF COUNT AN 1,	BTW COUNT += 1
+    IM OUTTA YR loop
+
+IF U SAY SO
+
+I HAS A MAX
+
+VISIBLE "How many fibonacci numbers do you wish to see?" MKAY?
+GIMMEH MAX
+
+MAX R MAEK MAX A NUMBR
+
+FIB MAX MKAY?
+
+KTHXBAI

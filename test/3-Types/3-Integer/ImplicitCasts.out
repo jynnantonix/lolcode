@@ -1,0 +1,3 @@
+0 
+1 
+Unexpected error: unsupported operand type(s) for +: 'int' and 'str'
